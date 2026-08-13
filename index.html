@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Belu Fresco | Facilitadora Certificada KAE®</title>
+<meta name="description" content="Belu Fresco, Facilitadora Certificada KAE®. Sesiones individuales y grupales para liberar bloqueos, reducir la ansiedad y ganar claridad." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,500&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --terracota:#c1694f;
+    --terracota-dark:#a8543c;
+    --salvia:#8a9a80;
+    --salvia-dark:#6f7f65;
+    --dorado:#c9a24b;
+    --crema:#faf3e8;
+    --crema-2:#f3e9da;
+    --text:#3c332c;
+    --text-soft:#6b5f54;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:'Quicksand', sans-serif;
+    background:var(--crema);
+    color:var(--text);
+    line-height:1.6;
+    overflow-x:hidden;
+  }
+  h1,h2,h3{
+    font-family:'Cormorant Garamond', serif;
+    font-weight:600;
+    line-height:1.15;
+  }
+  a{color:inherit; text-decoration:none;}
+  img{max-width:100%; display:block;}
+  .container{max-width:1080px; margin:0 auto; padding:0 24px;}
+  .eyebrow{
+    display:inline-block;
+    font-size:0.85rem;
+    letter-spacing:0.04em;
+    color:var(--terracota-dark);
+    font-weight:600;
+    margin-bottom:12px;
+  }
+
+  /* NAV */
+  header.nav{
+    position:fixed; top:0; left:0; right:0; z-index:100;
+    background:rgba(250,243,232,0.9);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid rgba(60,51,44,0.08);
+  }
+  .nav-inner{
+    max-width:1080px; margin:0 auto; padding:16px 24px;
+    display:flex; align-items:center; justify-content:space-between;
+  }
+  .nav-brand{font-family:'Cormorant Garamond', serif; font-size:1.4rem; font-weight:600; color:var(--terracota-dark);}
+  .nav-links{display:flex; gap:28px; font-size:0.95rem; font-weight:500;}
+  .nav-links a{opacity:0.85; transition:opacity .2s;}
+  .nav-links a:hover{opacity:1; color:var(--terracota-dark);}
+  .nav-cta{
+    background:var(--terracota); color:#fff; padding:10px 20px; border-radius:999px;
+    font-size:0.9rem; font-weight:600; transition:background .2s;
+  }
+  .nav-cta:hover{background:var(--terracota-dark);}
+  @media (max-width:720px){ .nav-links{display:none;} }
+
+  /* HERO */
+  .hero{
+    padding:160px 24px 90px;
+    display:grid; grid-template-columns:1.1fr 0.9fr; gap:48px; align-items:center;
+    max-width:1080px; margin:0 auto;
+  }
+  .hero h1{font-size:2.9rem; font-style:normal;}
+  .hero h1 em{color:var(--terracota); font-style:italic;}
+  .hero p{margin:20px 0 28px; color:var(--text-soft); font-size:1.08rem; max-width:46ch;}
+  .hero-actions{display:flex; gap:14px; flex-wrap:wrap;}
+  .btn{
+    display:inline-block; padding:14px 26px; border-radius:999px; font-weight:600; font-size:0.95rem;
+    transition:transform .15s, box-shadow .15s;
+  }
+  .btn-primary{background:var(--terracota); color:#fff; box-shadow:0 8px 20px rgba(193,105,79,0.28);}
+  .btn-primary:hover{transform:translateY(-2px);}
+  .btn-secondary{border:1.5px solid var(--salvia-dark); color:var(--salvia-dark);}
+  .btn-secondary:hover{background:var(--salvia); color:#fff; border-color:var(--salvia);}
+
+  .hero-photo-wrap{display:flex; justify-content:center;}
+  .hero-photo-ring{
+    width:320px; height:320px; border-radius:50%; padding:8px;
+    background:conic-gradient(from 180deg, var(--terracota), var(--dorado), var(--salvia), var(--terracota));
+  }
+  .hero-photo-ring .inner{
+    width:100%; height:100%; border-radius:50%; overflow:hidden; border:6px solid var(--crema);
+  }
+  .hero-photo-ring img{width:100%; height:100%; object-fit:cover;}
+  @media (max-width:860px){
+    .hero{grid-template-columns:1fr; padding-top:130px; text-align:center;}
+    .hero p{margin-left:auto; margin-right:auto;}
+    .hero-actions{justify-content:center;}
+    .hero-photo-ring{width:260px; height:260px;}
+  }
+
+  section{padding:90px 0;}
+  .section-alt{background:var(--crema-2);}
+  .section-head{max-width:640px; margin:0 auto 48px; text-align:center;}
+  .section-head h2{font-size:2.2rem;}
+  .section-head p{color:var(--text-soft); margin-top:14px;}
+
+  /* PUERI */
+  .pueri-card{
+    max-width:820px; margin:0 auto; background:#fff; border-radius:24px; padding:48px;
+    box-shadow:0 20px 50px rgba(60,51,44,0.06); text-align:center;
+  }
+  .pueri-card .icon{font-size:2rem; margin-bottom:18px;}
+  .pueri-card h3{font-size:1.7rem; margin-bottom:16px;}
+  .pueri-card p{color:var(--text-soft); margin-bottom:16px;}
+  .pueri-card .btn{margin-top:12px;}
+
+  /* KAE */
+  .kae-grid{display:grid; grid-template-columns:1fr 1fr; gap:40px; align-items:start;}
+  .kae-copy p{color:var(--text-soft); margin-bottom:16px;}
+  .kae-benefits{
+    background:#fff; border-radius:20px; padding:32px; box-shadow:0 20px 50px rgba(60,51,44,0.06);
+  }
+  .kae-benefits h3{font-size:1.5rem; margin-bottom:10px;}
+  .kae-benefits > p{color:var(--text-soft); margin-bottom:18px; font-size:0.95rem;}
+  .kae-benefits ul{list-style:none; margin:20px 0 24px;}
+  .kae-benefits li{
+    padding:10px 0; border-top:1px solid rgba(60,51,44,0.08); color:var(--text-soft); font-size:0.95rem;
+  }
+  .kae-benefits li:first-child{border-top:none;}
+  @media (max-width:860px){ .kae-grid{grid-template-columns:1fr;} }
+
+  /* GRUPAL */
+  .grupal-card{
+    max-width:640px; margin:0 auto; text-align:center; background:linear-gradient(135deg, #fff, var(--crema-2));
+    border-radius:24px; padding:48px; border:1px solid rgba(201,162,75,0.35);
+  }
+  .grupal-card .icon{font-size:2rem; margin-bottom:16px;}
+  .grupal-card h3{font-size:1.7rem; margin-bottom:14px;}
+  .grupal-card p{color:var(--text-soft); margin-bottom:22px;}
+
+  /* VASKAS */
+  .vaskas{
+    max-width:820px; margin:0 auto; display:flex; gap:36px; align-items:center;
+    background:#fff; border-radius:24px; padding:44px; box-shadow:0 20px 50px rgba(60,51,44,0.06);
+  }
+  .vaskas-logo{
+    flex:0 0 160px; background:var(--crema-2); border-radius:16px; padding:20px;
+    display:flex; align-items:center; justify-content:center;
+  }
+  .vaskas-body h3{font-size:1.5rem; margin-bottom:10px;}
+  .vaskas-body p{color:var(--text-soft); margin-bottom:18px; font-size:0.95rem;}
+  .vaskas-links{display:flex; gap:14px; flex-wrap:wrap;}
+  @media (max-width:720px){ .vaskas{flex-direction:column; text-align:center;} }
+
+  /* CTA FINAL */
+  .final-cta{text-align:center;}
+  .final-cta h2{font-size:2.2rem; margin-bottom:24px;}
+
+  footer{
+    background:var(--text); color:#e9e1d6; padding:48px 24px; text-align:center;
+  }
+  footer .nav-brand{color:#fff; margin-bottom:14px; display:block;}
+  footer .nav-links{justify-content:center; margin-bottom:18px; flex-wrap:wrap;}
+  footer .nav-links a{color:#e9e1d6; opacity:0.8;}
+  footer small{opacity:0.6; font-size:0.85rem;}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-inner">
+    <a href="#top" class="nav-brand">Belu Fresco</a>
+    <nav class="nav-links">
+      <a href="#top">Sobre mí</a>
+      <a href="#pueri">Pueri</a>
+      <a href="#sesiones">KAE®</a>
+      <a href="#vaskas">Las Vaskas</a>
+    </nav>
+    <a class="nav-cta" href="https://wa.me/5491156559582?text=Hola%20Belu%2C%20quiero%20agendar%20una%20sesi%C3%B3n%20KAE%C2%AE" target="_blank" rel="noopener">Agendar</a>
+  </div>
+</header>
+
+<section class="hero" id="top">
+  <div class="hero-copy">
+    <span class="eyebrow">🌿 Facilitadora Certificada KAE®</span>
+    <h1>Te acompaño a liberar bloqueos, reducir tu <em>ansiedad</em> y ganar claridad.</h1>
+    <p>Expandirte es hoy. Sesiones individuales y grupales de Activación KAE® para soltar traumas, miedos y creencias limitantes almacenadas en el cuerpo.</p>
+    <div class="hero-actions">
+      <a class="btn btn-primary" href="https://wa.me/5491156559582?text=Hola%20Belu%2C%20quiero%20agendar%20una%20sesi%C3%B3n%20KAE%C2%AE" target="_blank" rel="noopener">💬 Agendemos por WhatsApp</a>
+      <a class="btn btn-secondary" href="#sesiones">Conocer KAE®</a>
+    </div>
+  </div>
+  <div class="hero-photo-wrap">
+    <div class="hero-photo-ring">
+      <div class="inner">
+        <img src="images/belu-hero.jpg" alt="Belu, Facilitadora Certificada KAE®" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="pueri">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Puericultura</span>
+      <h2>Pueri — mujeres siendo madres</h2>
+      <p>Un espacio de acompañamiento cercano para mujeres recién madres.</p>
+    </div>
+    <div class="pueri-card">
+      <div class="icon">🤍</div>
+      <h3>¿Qué es Pueri?</h3>
+      <p>Como puericultora, acompaño a mujeres recién madres en el encuentro con sus bebés: la lactancia, el sueño, los cuidados del recién nacido y todo lo que aparece en esos primeros tiempos.</p>
+      <p>Un espacio de escucha y contención para transitar el puerperio con más presencia y menos soledad, resolviendo dudas concretas y sosteniendo también lo emocional de esta nueva etapa.</p>
+      <a class="btn btn-primary" href="https://wa.me/5491156559582?text=Hola%2C%20quiero%20consultarte%20por%20el%20servicio%20de%20pueri" target="_blank" rel="noopener">Consultar</a>
+    </div>
+  </div>
+</section>
+
+<section id="sesiones" class="section-alt">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Qué es KAE®</span>
+      <h2>Una técnica terapéutica energética</h2>
+      <p>Original de Activación de Energía Kundalini, para trabajar la información emocional reprimida en el cuerpo.</p>
+    </div>
+    <div class="kae-grid">
+      <div class="kae-copy">
+        <h3>Sesión 1:1</h3>
+        <p>Tendrás una sesión plena de KAE® conmigo, donde profundizaremos en la liberación de traumas, miedos, creencias limitantes y bloqueos emocionales almacenados en tu cuerpo como información reprimida. Avanzando de manera plena en la vida.</p>
+        <p>♡ A través de KAE® activamos puntos energéticos que desbloquean la información emocional bloqueada en diferentes niveles de conciencia, permitiéndote romper patrones, creencias limitantes y traumas — pudiendo avanzar en vínculos, proyectos y temas recurrentes de salud.</p>
+        <a class="btn btn-primary" href="https://wa.me/5491156559582?text=Hola%20Belu%2C%20quiero%20agendar%20una%20Sesi%C3%B3n%201%3A1%20de%20KAE%C2%AE" target="_blank" rel="noopener">Agendemos 👇</a>
+      </div>
+      <div class="kae-benefits">
+        <h3>Beneficios</h3>
+        <ul>
+          <li>Reduce el estrés y la ansiedad</li>
+          <li>Potencia nuevas conexiones neuronales</li>
+          <li>Reestructura el sistema nervioso central</li>
+          <li>Aumenta tu energía vital</li>
+          <li>Da claridad mental</li>
+          <li>Expande tu intuición y creatividad</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Otro espacio</span>
+      <h2>Sesión grupal íntima</h2>
+    </div>
+    <div class="grupal-card">
+      <div class="icon">🕯️</div>
+      <h3>Activación KAE®</h3>
+      <p>Un formato grupal e íntimo: un espacio compartido para soltar, sanar y expandirte junto a otras personas. Los cupos son limitados.</p>
+      <a class="btn btn-primary" href="https://wa.me/5491156559582?text=Hola%20Belu%2C%20quiero%20reservar%20un%20lugar%20en%20la%20Sesi%C3%B3n%20Grupal%20de%20Activaci%C3%B3n%20KAE%C2%AE" target="_blank" rel="noopener">Reservar mi lugar</a>
+    </div>
+  </div>
+</section>
+
+<section id="vaskas" class="section-alt">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Otro proyecto</span>
+      <h2>Las Vaskas — ropa con sentido</h2>
+    </div>
+    <div class="vaskas">
+      <div class="vaskas-logo">
+        <img src="images/lasvaskas-logo.png" alt="Las Vaskas" />
+      </div>
+      <div class="vaskas-body">
+        <p style="color:var(--text-soft); font-style:italic; margin-bottom:8px;">ropa con sentido</p>
+        <p>Co-creé Las Vaskas hace 12 años junto a mi hermana, para acompañar a que todas las mujeres se sientan bien por dentro y por fuera. Creamos prendas con sentido, entendiendo que todos los cuerpos son distintos: looks listos o a medida, sin costo extra.</p>
+        <div class="vaskas-links">
+          <a class="btn btn-primary" href="https://www.lasvaskas.com.ar/" target="_blank" rel="noopener">Ver tienda online</a>
+          <a class="btn btn-secondary" href="https://www.instagram.com/lasvaskas/" target="_blank" rel="noopener">Instagram @lasvaskas</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="final-cta">
+  <div class="container">
+    <h2>Expandirte es hoy</h2>
+    <p style="color:var(--text-soft); max-width:520px; margin:0 auto 28px;">Agendá tu sesión 1:1 o reservá tu lugar en la próxima Activación KAE® grupal.</p>
+    <a class="btn btn-primary" href="https://wa.me/5491156559582?text=Hola%20Belu%2C%20quiero%20agendar%20una%20sesi%C3%B3n%20KAE%C2%AE" target="_blank" rel="noopener">💬 Escribirle a Belu</a>
+  </div>
+</section>
+
+<footer>
+  <a href="#top" class="nav-brand">Belu Fresco</a>
+  <nav class="nav-links">
+    <a href="#top">Sobre mí</a>
+    <a href="#pueri">Pueri</a>
+    <a href="#sesiones">KAE®</a>
+    <a href="#vaskas">Las Vaskas</a>
+    <a href="https://wa.me/5491156559582" target="_blank" rel="noopener">WhatsApp</a>
+  </nav>
+  <small>© Belu Fresco · Facilitadora Certificada KAE®</small>
+</footer>
+
+</body>
+</html>
